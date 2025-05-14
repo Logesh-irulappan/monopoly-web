@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+id="WebApp_ID" version="4.0">
+  
+  <display-name>jdbc_webProject</display-name>
+  
+  <servlet> 
+  	<servlet-name>AddPlayerHandler</servlet-name>
+  	<servlet-class>jdbc_webProject.Handlers.InitialHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddPlayerHandler</servlet-name>
+  	<url-pattern>/addPlayer</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>LobbyHandler</servlet-name>
+  	<servlet-class>jdbc_webProject.Handlers.InitialHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LobbyHandler</servlet-name>
+  	<url-pattern>/lobby</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>GameHandlerResponse</servlet-name>
+  	<servlet-class>jdbc_webProject.Handlers.GameHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GameHandlerResponse</servlet-name>
+  	<url-pattern>/getGame</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>GameHandlerDice</servlet-name>
+  	<servlet-class>jdbc_webProject.Handlers.GameHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GameHandlerDice</servlet-name>
+  	<url-pattern>/diceRoll</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BankHandlerServlet</servlet-name>
+  	<servlet-class>jdbc_webProject.Handlers.BankHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>	
+  	<servlet-name>BankHandlerServlet</servlet-name>
+  	<url-pattern>/bankHandler</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CommandHandler</servlet-name>
+  	<servlet-class>jdbc_webProject.Handlers.CommandHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CommandHandler</servlet-name>
+  	<url-pattern>/command</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
