@@ -1,0 +1,36 @@
+MONOPOLY DATABASE TABLES DOCUMENT
+
+DATABASE NAME: mydb
+
+PLAYERS 
+-> PlayerId int NOT NULL PRI auto_increment
+-> PlayerName text 
+
+PLACE
+-> PlaceId int NOT NULL PRI auto_increment 
+-> PlaceType text 
+
+BANKER
+-> UserID int NOT NULL PRI // {same as playerId}
+-> balance double 
+-> BorrowedAmount double
+
+OWNEDPLACES
+-> OwnerId int NOT NULL
+-> PlaceId int NOT NULL
+
+CHARGES
+-> PlaceId int NOT NULL 
+-> RentValue double
+
+PROPERTY
+-> PlaceId int NOT NULL 
+-> RentValue double 
+-> SellValue double
+-> TotalHouses int
+-> AvailedHouses int
+
+
+
+
+
